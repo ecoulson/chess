@@ -1,0 +1,20 @@
+{
+    "name": "chess",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clean": "rm -rf ./dist",
+        "build": "npm run clean && tsc -p ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ecoulson/chess.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ecoulson/chess/issues"
+    },
+    "homepage": "https://github.com/ecoulson/chess#readme"
+}
