@@ -4,8 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "build": "npm run clean && tsc -p .",
         "clean": "rm -rf ./dist",
-        "build": "npm run clean && tsc -p ."
+        "start": "node dist/server/index.js",
+        "watch": "tsc -w"
     },
     "repository": {
         "type": "git",
@@ -16,5 +18,9 @@
     "bugs": {
         "url": "https://github.com/ecoulson/chess/issues"
     },
-    "homepage": "https://github.com/ecoulson/chess#readme"
+    "homepage": "https://github.com/ecoulson/chess#readme",
+    "devDependencies": {
+        "@types/node": "^18.11.18",
+        "nodemon": "^2.0.20"
+    }
 }
